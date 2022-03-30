@@ -1,7 +1,7 @@
 
 import * as THREE from 'https://cdn.skypack.dev/three@0.136';
 
-            import {ARButton} from "https://cdn.skypack.dev/three@0.136/examples//jsm/webxr/ARButton.js";
+            import {ARButton} from "https://cdn.skypack.dev/three@0.136/examples/jsm/webxr/ARButton.js";
 			let container;
 			let camera, scene, renderer;
 			let controller;
