@@ -68,7 +68,7 @@ let shoes;
                 if ( reticle.visible ) {
 
                     reticle.matrix.decompose( model.position, model.quaternion, model.scale );
-                    mesh.scale.y = Math.random() * 2 + 1;
+                    model.scale.y = Math.random() * 2 + 1;
                     scene.add( model );
 
                 }
