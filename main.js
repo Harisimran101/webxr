@@ -49,15 +49,14 @@ let shoes;
                model = gltf.scene;
           
              scene.add(model)
+
+             let milk = model.getObjectByName('Mesh_0');
            
           const controller = renderer.xr.getController( 0 );
           controller.addEventListener( 'select', onSelect );
           scene.add( controller );
 
-        const  reticle = new THREE.Mesh(
-              new THREE.RingGeometry( 0.15, 0.2, 32 ).rotateX( - Math.PI / 2 ),
-              new THREE.MeshBasicMaterial()
-          );
+        const  reticle = milk;
           reticle.matrixAutoUpdate = false;
           reticle.visible = false;
           scene.add( reticle );
